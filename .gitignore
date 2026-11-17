@@ -1,0 +1,42 @@
+# === Python / FastAPI backend ===
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# === Entorno y secretos ===
+.env
+.env.*
+!.env.example
+
+# === Bases de datos locales ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === Node / frontend ===
+node_modules/
+dist/
+.vite/
+
+# === Logs ===
+*.log
+*.log.out
+*.log.err
+npm-debug.log*
+
+# === Android / Gradle ===
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+captures/
+.idea/
+*.iml
+
+# === Sistema ===
+Thumbs.db
+Desktop.ini
+.DS_Store

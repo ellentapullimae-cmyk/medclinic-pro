@@ -1,0 +1,174 @@
+/* ==========================================================================
+   MedClinic Pro — Enterprise Medical SaaS Design System
+   ========================================================================== */
+
+:root {
+  /* Paleta enterprise */
+  --mc-navy: #061b3a;
+  --mc-navy-2: #0a2549;
+  --mc-navy-3: #0e3058;
+  --mc-blue: #0878f9;
+  --mc-blue-dark: #0560c9;
+  --mc-blue-soft: #e8f2fe;
+  --mc-cyan: #16c7f5;
+  --mc-bg: #f3f7fc;
+  --mc-white: #ffffff;
+  --mc-ink: #0b1f3a;
+  --mc-gray: #64748b;
+
+  /* Estados */
+  --mc-green: #10b981;
+  --mc-green-soft: #e7f8f2;
+  --mc-amber: #f59e0b;
+  --mc-amber-soft: #fef6e7;
+  --mc-red: #ef4444;
+  --mc-red-soft: #fdecec;
+  --mc-violet: #7c3aed;
+  --mc-violet-soft: #f1ecfe;
+
+  /* Superficies */
+  --mc-border: #e2eaf4;
+  --mc-radius: 16px;
+  --mc-radius-sm: 10px;
+  --mc-radius-pill: 999px;
+
+  /* Sombras */
+  --mc-shadow-sm: 0 1px 2px rgba(6, 27, 58, 0.05), 0 1px 3px rgba(6, 27, 58, 0.04);
+  --mc-shadow: 0 4px 18px rgba(6, 27, 58, 0.07), 0 2px 6px rgba(6, 27, 58, 0.04);
+  --mc-shadow-lg: 0 16px 40px rgba(8, 120, 249, 0.14), 0 4px 12px rgba(6, 27, 58, 0.08);
+
+  /* Tipografía */
+  --mc-font: 'Inter', 'Poppins', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  /* Layout */
+  --mc-sidebar: 264px;
+  --mc-header: 72px;
+
+  font-family: var(--mc-font);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--mc-ink);
+  background: var(--mc-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--mc-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--mc-ink);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: rgba(8, 120, 249, 0.22);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5d4e8;
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mc-blue);
+  background-clip: content-box;
+  border: 3px solid transparent;
+}
+
+@keyframes mc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mc-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mc-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes mc-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mc-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
